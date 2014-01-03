@@ -6439,7 +6439,6 @@ namespace OpenTween
                         //フォーカスList
                         switch (KeyCode)
                         {
-                            case Keys.N:
                             case Keys.Right:
                                 GoRelPost(true);
                                 return true;
