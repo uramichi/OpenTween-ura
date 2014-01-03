@@ -6564,6 +6564,14 @@ namespace OpenTween
                             // Webページを開く動作
                             OpenURLMenuItem_Click(null, null);
                             return true;
+                        case Keys.Delete:
+                            /* 追加機能: StatusTextを空にする */
+                            StatusText.Text = "";
+                            _reply_to_id = null;
+                            _reply_to_name = null;
+                            if (!ToolStripFocusLockMenuItem.Checked)
+                                _curList.Focus();
+                            return true;
                     }
                     //フォーカスList
                     if (Focused == FocusedControl.ListTab)
@@ -13314,3 +13322,5 @@ namespace OpenTween
         }
     }
 }
+
+// vim:ff=unix:et:ts=4:sts=4:sw=4
