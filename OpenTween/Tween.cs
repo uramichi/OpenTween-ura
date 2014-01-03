@@ -6439,7 +6439,6 @@ namespace OpenTween
                         //フォーカスList
                         switch (KeyCode)
                         {
-                            case Keys.N:
                             case Keys.Right:
                                 GoRelPost(true);
                                 return true;
@@ -6458,6 +6457,12 @@ namespace OpenTween
                                 return true;
                             case Keys.R:
                                 DoRefresh();
+                                return true;
+                            case Keys.OemQuestion:
+                                MenuItemSubSearch_Click(null, null);
+                                return true;
+                            case Keys.N:
+                                MenuItemSearchNext_Click(null, null);
                                 return true;
                         }
                         //以下、アンカー初期化
@@ -6723,7 +6728,7 @@ namespace OpenTween
                             return true;
                         }
                     }
-                    //フォーカスリスト
+                    //フォーカスList
                     if (Focused == FocusedControl.ListTab)
                     {
                         switch (KeyCode)
@@ -6750,6 +6755,8 @@ namespace OpenTween
                                 GoBackInReplyToPostTree(true, true);
                                 return true;
                             case Keys.N:
+                                MenuItemSearchPrev_Click(null, null);
+                                return true;
                             case Keys.Right:
                                 // お気に入り前後ジャンプ(SHIFT+N←/P→)
                                 GoFav(true);
