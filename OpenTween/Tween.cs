@@ -5209,6 +5209,7 @@ namespace OpenTween
         private ListViewItem CreateItem(TabPage Tab, PostClass Post, int Index)
         {
             StringBuilder mk = new StringBuilder();
+            if (Post.IsDeleted) mk.Append("消");
             //if (Post.IsDeleted) mk.Append("×");
             //if (Post.IsMark) mk.Append("♪");
             //if (Post.IsProtect) mk.Append("Ю");
@@ -5219,7 +5220,7 @@ namespace OpenTween
             {
                 string[] sitem= {"",
                                  Post.Nickname,
-                                 Post.IsDeleted ? "(DELETED)" : Post.TextSingleLine,
+                                 /*Post.IsDeleted ? "(DELETED)" :*/ Post.TextSingleLine,
                                  Post.CreatedAt.ToString(SettingDialog.DateTimeFormat),
                                  Post.ScreenName,
                                  "",
@@ -5231,7 +5232,7 @@ namespace OpenTween
             {
                 string[] sitem = {"",
                                   Post.Nickname,
-                                  Post.IsDeleted ? "(DELETED)" : Post.TextSingleLine,
+                                  /*Post.IsDeleted ? "(DELETED)" :*/ Post.TextSingleLine,
                                   Post.CreatedAt.ToString(SettingDialog.DateTimeFormat),
                                   Post.ScreenName + Environment.NewLine + "(RT:" + Post.RetweetedBy + ")",
                                   "",
@@ -6134,7 +6135,7 @@ namespace OpenTween
             displayItem = (ImageListViewItem)_curList.Items[_curList.SelectedIndices[0]];
             displayItem.ImageDownloaded += this.DisplayItemImage_Downloaded;
 
-            string dTxt = createDetailHtml(_curPost.IsDeleted ? "(DELETED)" : _curPost.Text);
+            string dTxt = createDetailHtml(/*_curPost.IsDeleted ? "(DELETED)" :*/ _curPost.Text);
             if (_curPost.IsDm)
             {
                 SourceLinkLabel.Tag = null;
@@ -7056,7 +7057,7 @@ namespace OpenTween
                     IsProtected = true;
                     continue;
                 }
-                if (post.IsDeleted) continue;
+                //if (post.IsDeleted) continue;
                 if (!isDm)
                 {
                     if (post.RetweetedId != null)
