@@ -525,12 +525,17 @@ namespace OpenTween
         }
 
         private void loadConsumer(){
-            if(File.Exists(CSM_FNAME)){
+            try
+            {
                 StreamReader sr = new StreamReader(CSM_FNAME);
-                ApplicationSettings.TwitterConsumerKey    = sr.ReadLine();
-                ApplicationSettings.TwitterConsumerSecret = sr.ReadLine();
+                string[] lines = (new Regex(@"\s+")).Split(sr.ReadToEnd());
+                if (lines.Length >= 2)
+                {
+                    ApplicationSettings.TwitterConsumerKey    = lines[0];
+                    ApplicationSettings.TwitterConsumerSecret = lines[1];
+                }
                 sr.Close();
-            }
+            } catch { }
         }
 
         private void Form1_Load(object sender, EventArgs e)
