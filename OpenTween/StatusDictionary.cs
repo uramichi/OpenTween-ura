@@ -1061,11 +1061,13 @@ namespace OpenTween
                 if (isUserStream)
                 {
                     isDeletePost = this._deletedIds.Count > 0;
-                    foreach (var id in this._deletedIds)
-                    {
-                        //this.DeletePost(StatusId)
-                        this.RemovePost(id);
-                    }
+                    // ここからツイ消しの除去
+                    // foreach (var id in this._deletedIds)
+                    // {
+                    //     //this.DeletePost(StatusId)
+                    //     this.RemovePost(id);
+                    // }
+                    // ここまでツイ消しの除去
                     this._deletedIds.Clear();
                 }
 
