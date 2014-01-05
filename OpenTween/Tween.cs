@@ -5,7 +5,8 @@
 //           (c) 2010-2011 anis774 (@anis774) <http://d.hatena.ne.jp/anis774/>
 //           (c) 2010-2011 fantasticswallow (@f_swallow) <http://twitter.com/f_swallow>
 //           (c) 2011      kim_upsilon (@kim_upsilon) <https://upsilo.net/~upsilon/>
-//           (c) 2014      uramichi (@uramichi) <http://twitter.com/uramichi>
+//           (c) 2014      7kry (@nerid_nkh) <http://www.7kry.net/>
+//           (c) 2014      uramichi (@uramichi) <http://twitter.com/uramichi/>
 // All rights reserved.
 // 
 // This file is part of OpenTween.
