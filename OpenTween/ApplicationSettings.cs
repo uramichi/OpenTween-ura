@@ -83,8 +83,8 @@ namespace OpenTween
         /// <summary>
         /// Twitter コンシューマーキー
         /// </summary>
-        public const string TwitterConsumerKey = "Dkb6NK8HNeMgNq7JssDg";
-        public const string TwitterConsumerSecret = "AScaPs4xFUpAPYMZZWKlHlC2u8gOEjQUls6yRLGkU";
+        public static string TwitterConsumerKey = "Dkb6NK8HNeMgNq7JssDg";
+        public static string TwitterConsumerSecret = "AScaPs4xFUpAPYMZZWKlHlC2u8gOEjQUls6yRLGkU";
 
         //=====================================================================
         // Twitpic

@@ -5,6 +5,7 @@
 //           (c) 2010-2011 anis774 (@anis774) <http://d.hatena.ne.jp/anis774/>
 //           (c) 2010-2011 fantasticswallow (@f_swallow) <http://twitter.com/f_swallow>
 //           (c) 2011      kim_upsilon (@kim_upsilon) <https://upsilo.net/~upsilon/>
+//           (c) 2014      uramichi (@uramichi) <http://twitter.com/uramichi>
 // All rights reserved.
 // 
 // This file is part of OpenTween.
@@ -53,6 +54,9 @@ namespace OpenTween
 {
     public partial class TweenMain : OTBaseForm
     {
+        //追加機能
+        public const string CSM_FNAME = "consumer.txt";  //via芸
+
         //各種設定
         private Size _mySize;           //画面サイズ
         private Point _myLoc;           //画面位置
@@ -519,8 +523,19 @@ namespace OpenTween
             }
         }
 
+        private void loadConsumer(){
+            if(File.Exists(CSM_FNAME)){
+                StreamReader sr = new StreamReader(CSM_FNAME);
+                ApplicationSettings.TwitterConsumerKey    = sr.ReadLine();
+                ApplicationSettings.TwitterConsumerSecret = sr.ReadLine();
+                sr.Close();
+            }
+        }
+
         private void Form1_Load(object sender, EventArgs e)
         {
+            loadConsumer();
+
             _ignoreConfigSave = true;
             this.Visible = false;
 
