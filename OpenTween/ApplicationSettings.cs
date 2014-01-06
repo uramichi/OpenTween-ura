@@ -74,7 +74,7 @@ namespace OpenTween
         /// version.txt のフォーマットについては http://sourceforge.jp/projects/opentween/wiki/VersionTxt を参照。
         /// 派生プロジェクトなどでこの機能を無効にする場合は null をセットして下さい。
         /// </remarks>
-        public static readonly string VersionInfoUrl = "";
+        public static readonly string VersionInfoUrl = null;
 
         //=====================================================================
         // Twitter
