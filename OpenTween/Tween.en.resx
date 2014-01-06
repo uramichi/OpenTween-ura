@@ -878,12 +878,6 @@
   <data name="StatusText.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="lblLen.Location" type="System.Drawing.Point, System.Drawing">
-    <value>452, 0</value>
-  </data>
-  <data name="lblLen.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="PostButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>511, 0</value>
   </data>

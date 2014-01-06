@@ -382,7 +382,7 @@
     <value />
   </data>
   <data name="PostButton.Text" xml:space="preserve">
-    <value>Post</value>
+    <value>999</value>
   </data>
   <data name="Label2.Location" type="System.Drawing.Point, System.Drawing">
     <value>478, 4</value>
@@ -527,9 +527,6 @@
   </data>
   <data name="&gt;&gt;SaveFileDialog1.Type" xml:space="preserve">
     <value>System.Windows.Forms.SaveFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lblLen.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
   </data>
   <data name="OpenOwnFavedMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>306, 24</value>
@@ -870,17 +867,11 @@
   <data name="SplitContainer1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="lblLen.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="ImageSelectionPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
   <data name="&gt;&gt;FriendshipContextMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lblLen.Location" type="System.Drawing.Point, System.Drawing">
-    <value>643, 0</value>
   </data>
   <data name="PostButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -1065,9 +1056,6 @@
   <data name="&gt;&gt;DateTimeLabel.Parent" xml:space="preserve">
     <value>TableLayoutPanel1</value>
   </data>
-  <data name="lblLen.Text" xml:space="preserve">
-    <value>999</value>
-  </data>
   <data name="FavoriteRetweetMenuItem.Text" xml:space="preserve">
     <value>Fav追加+Retweet</value>
   </data>
@@ -1155,9 +1143,6 @@
   <data name="&gt;&gt;ToolStripContainer1.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripContainer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="lblLen.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 25</value>
-  </data>
   <data name="&gt;&gt;FavoriteRetweetUnofficialContextMenu.Name" xml:space="preserve">
     <value>FavoriteRetweetUnofficialContextMenu</value>
   </data>
@@ -1208,9 +1193,6 @@
   </data>
   <data name="&gt;&gt;ImagefilePathText.Name" xml:space="preserve">
     <value>ImagefilePathText</value>
-  </data>
-  <data name="&gt;&gt;lblLen.Name" xml:space="preserve">
-    <value>lblLen</value>
   </data>
   <data name="&gt;&gt;ImageSelectionPanel.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -2354,9 +2336,6 @@
   <data name="NameLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 9pt, style=Bold</value>
   </data>
-  <data name="&gt;&gt;lblLen.Parent" xml:space="preserve">
-    <value>SplitContainer2.Panel2</value>
-  </data>
   <data name="&gt;&gt;ContextMenuTabProperty.Type" xml:space="preserve">
     <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -2392,9 +2371,6 @@
   </data>
   <data name="JmpStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>269, 24</value>
-  </data>
-  <data name="lblLen.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
   </data>
   <data name="ContextMenuOperate.Size" type="System.Drawing.Size, System.Drawing">
     <value>289, 556</value>
@@ -3035,9 +3011,6 @@
   <data name="&gt;&gt;ToolStripSeparator43.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="lblLen.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Right</value>
-  </data>
   <data name="&gt;&gt;ShowUserTimelineToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -3209,9 +3182,6 @@
   <data name="SplitContainer1.Size" type="System.Drawing.Size, System.Drawing">
     <value>765, 515</value>
   </data>
-  <data name="&gt;&gt;lblLen.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="&gt;&gt;ShowUserTimelineContextMenuItem.Name" xml:space="preserve">
     <value>ShowUserTimelineContextMenuItem</value>
   </data>
@@ -3319,9 +3289,6 @@
   </data>
   <data name="ReplyOpMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>377, 24</value>
-  </data>
-  <data name="&gt;&gt;lblLen.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="MoveToRTHomeMenuItem.Text" xml:space="preserve">
     <value>RTした人のホームを開く(&amp;R)</value>
@@ -4050,9 +4017,6 @@
   <data name="&gt;&gt;ToolStripContainer1.BottomToolStripPanel.Parent" xml:space="preserve">
     <value>ToolStripContainer1</value>
   </data>
-  <data name="lblLen.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
   <data name="&gt;&gt;TimelinePanel.Parent" xml:space="preserve">
     <value>SplitContainer1.Panel1</value>
   </data>
@@ -4667,9 +4631,6 @@
   </data>
   <data name="&gt;&gt;SelectionAllContextMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lblLen.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>Off</value>
   </data>
   <data name="&gt;&gt;IsgdToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
