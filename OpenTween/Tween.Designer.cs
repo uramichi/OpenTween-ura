@@ -126,7 +126,6 @@
             this.SourceCopyMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.SourceUrlCopyMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.StatusText = new System.Windows.Forms.TextBox();
-            this.lblLen = new System.Windows.Forms.Label();
             this.PostButton = new System.Windows.Forms.Button();
             this.tweetThumbnail1 = new OpenTween.TweetThumbnail();
             this.MenuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -810,7 +809,6 @@
             // 
             resources.ApplyResources(this.SplitContainer2.Panel2, "SplitContainer2.Panel2");
             this.SplitContainer2.Panel2.Controls.Add(this.StatusText);
-            this.SplitContainer2.Panel2.Controls.Add(this.lblLen);
             this.SplitContainer2.Panel2.Controls.Add(this.PostButton);
             this.ToolTip1.SetToolTip(this.SplitContainer2.Panel2, resources.GetString("SplitContainer2.Panel2.ToolTip"));
             this.SplitContainer2.Panel2.Resize += new System.EventHandler(this.SplitContainer2_Panel2_Resize);
@@ -1183,12 +1181,6 @@
             this.StatusText.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.StatusText_KeyPress);
             this.StatusText.KeyUp += new System.Windows.Forms.KeyEventHandler(this.StatusText_KeyUp);
             this.StatusText.Leave += new System.EventHandler(this.StatusText_Leave);
-            // 
-            // lblLen
-            // 
-            resources.ApplyResources(this.lblLen, "lblLen");
-            this.lblLen.Name = "lblLen";
-            this.ToolTip1.SetToolTip(this.lblLen, resources.GetString("lblLen.ToolTip"));
             // 
             // PostButton
             // 
@@ -2649,7 +2641,6 @@
         internal System.Windows.Forms.ToolStripMenuItem SourceCopyMenuItem;
         internal System.Windows.Forms.ToolStripMenuItem SourceUrlCopyMenuItem;
         internal System.Windows.Forms.TextBox StatusText;
-        internal System.Windows.Forms.Label lblLen;
         internal System.Windows.Forms.Button PostButton;
         internal System.Windows.Forms.MenuStrip MenuStrip1;
         internal System.Windows.Forms.ToolStripMenuItem MenuItemFile;

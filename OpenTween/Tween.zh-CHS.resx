@@ -406,9 +406,6 @@
   <data name="ContextMenuPostBrowser.Size" type="System.Drawing.Size, System.Drawing">
     <value>210, 320</value>
   </data>
-  <data name="PostButton.Text" xml:space="preserve">
-    <value>发送</value>
-  </data>
   <data name="SettingFileMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>171, 22</value>
   </data>
