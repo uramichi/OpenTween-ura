@@ -5313,7 +5313,7 @@ namespace OpenTween
                 if (((Control)sender).Focused)
                     e.Graphics.FillRectangle(_brsHighLight, e.Bounds);
                 else
-                    e.Graphics.FillRectangle(_brsDeactiveSelection, e.Bounds);
+                    e.Graphics.FillRectangle(new SolidBrush(Color.DarkGray) /*_brsDeactiveSelection */, e.Bounds);
             }
             if ((e.State & ListViewItemStates.Focused) == ListViewItemStates.Focused) e.DrawFocusRectangle();
             this.DrawListViewItemIcon(e);
@@ -6230,7 +6230,8 @@ namespace OpenTween
                 }
             }
 
-            NameLabel.ForeColor = System.Drawing.SystemColors.ControlText;
+            NameLabel.ForeColor = _clReaded; //System.Drawing.SystemColors.ControlText;
+            NameLabel.BackColor = _clListBackcolor;
             DateTimeLabel.Text = _curPost.CreatedAt.ToString();
             if (_curPost.IsOwl && (SettingDialog.OneWayLove || _statuses.Tabs[_curTab.Text].TabType == MyCommon.TabUsageType.DirectMessage)) NameLabel.ForeColor = _clOWL;
             if (_curPost.RetweetedId != null) NameLabel.ForeColor = _clRetweet;
@@ -7749,7 +7750,7 @@ namespace OpenTween
         {
             // フォーカスがメニューに遷移しないならばフォーカスはタブに移ることを期待
             if (ListTab.SelectedTab != null && MenuStrip1.Tag == null) this.Tag = ListTab.SelectedTab.Tag;
-            StatusText.BackColor = Color.FromKnownColor(KnownColor.Window);
+            StatusText.BackColor = Color.Black; //FromKnownColor(KnownColor.Window);
         }
 
         private void StatusText_KeyDown(object sender, KeyEventArgs e)
@@ -12280,6 +12281,7 @@ namespace OpenTween
             this.ListTab.HandleCreated += (s, e) => Win32Api.SetMinTabWidth((TabControl)s, 40);
 
             this._apiGauge = new ToolStripAPIGauge();
+            this._apiGauge.ForeColor = Color.Black;
             this.StatusStrip1.Items.Insert(2, this._apiGauge);
 
             this.ReplaceAppName();
