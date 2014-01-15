@@ -56,6 +56,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="7kry\CommandWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="7kry\CommandWindow.Designer.cs">
+      <DependentUpon>CommandWindow.cs</DependentUpon>
+    </Compile>
     <Compile Include="Api\ApiLimit.cs" />
     <Compile Include="Api\TwitterApiAccessLevel.cs" />
     <Compile Include="Api\TwitterApiStatus.cs" />
@@ -271,6 +277,9 @@
     <Compile Include="Connection\HttpConnection.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="7kry\CommandWindow.resx">
+      <DependentUpon>CommandWindow.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AuthDialog.en.resx">
       <DependentUpon>AuthDialog.cs</DependentUpon>
     </EmbeddedResource>

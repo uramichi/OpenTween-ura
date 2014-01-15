@@ -6487,6 +6487,11 @@ namespace OpenTween
                             case Keys.N:
                                 MenuItemSearchNext_Click(null, null);
                                 return true;
+                            case Keys.OemSemicolon:
+                                var cmdwin = new kt7kry.CommandWindow(this);
+                                cmdwin.StartPosition = FormStartPosition.CenterParent;
+                                cmdwin.ShowDialog();
+                                return true;
                         }
                         //以下、アンカー初期化
                         _anchorFlag = false;
