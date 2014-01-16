@@ -18,5 +18,36 @@ namespace OpenTween.kt7kry
             target = tweenObj;
             textBox1.Focus();
         }
+
+        private bool CommandEval(string command){
+            return true;
+        }
+
+        private void CommandComplete()
+        {
+        }
+
+        private void CommandWindows_KeyDown(object sender, KeyEventArgs e)
+        {
+            switch (e.Modifiers){
+                case Keys.Control:
+                    switch(e.KeyCode){
+                        case Keys.C:
+                            this.Close();
+                            return;
+                        case Keys.J:
+                        case Keys.M:
+                            CommandEval(textBox1.Text);
+                            return;
+                        case Keys.U:
+                            textBox1.Text = "";
+                            return;
+                        case Keys.I:
+                            CommandComplete();
+                            return;
+                    }
+                    return;
+            }
+        }
     }
 }
